@@ -20,6 +20,7 @@ let weather = {
         const { temp, humidity } = data.main;
         const { speed } = data.wind;
         document.body.style.backgroundImage = "url('https://source.unsplash.com/random/?" + name + " ' )";
+        console.log(data);
         document.querySelector(".city").innerHTML = "Weather in " + name;
         document.querySelector(".icon").src = "https://openweathermap.org/img/wn/" + icon +".png"
         document.querySelector(".temp").innerHTML = temp + " °F";
